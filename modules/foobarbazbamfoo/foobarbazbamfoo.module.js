@@ -7,20 +7,14 @@
   // Config
   angular.module('fooBarBazBamFoo.config', [])
       .value('fooBarBazBamFoo.config', {
-          debug: true
+          debug: true,
+          foobar: false
       });
 
   // Modules
-
   angular.module('fooBarBazBamFoo.directives', []);
-
-
-
   angular.module('fooBarBazBamFoo.services', []);
-
-
-    angular.module('fooBarBazBamFoo.controllers', []);
-
+  angular.module('fooBarBazBamFoo.controllers', []);
   angular.module('fooBarBazBamFoo',
       [
         'fooBarBazBamFoo.config',
@@ -28,5 +22,11 @@
         'fooBarBazBamFoo.services',
         'fooBarBazBamFoo.controllers'
       ]);
-
 })(angular);
+
+fooBarBazBamFoo.factory("ngFooBar", function(){
+  console.log("ngFooBar loaded");
+  return {
+    foo: 'bar'
+  };
+});
