@@ -1,0 +1,35 @@
+{
+  "name": "foobarbazbamfoo",
+  "version": "0.1.0",
+  "description": "This Angular components does ...",
+  "keywords": ["angular","ng"],
+  "authors": [
+    {
+      "name": "full_name",
+      "email": "public88878878887@hotmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darul75/ng-audio.git"
+  },
+  "license": "UNLICENSED",
+  "main": [
+    "dist/foobarbazbamfoo.js",
+    "dist/foobarbazbamfoo.css"
+    ],
+  "ignore": [
+    "*.*",
+    "bower",
+    "modules",
+    "node_modules",
+    "src",
+    "test"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "angular-mocks": ">=1.2.0",
+    "angular-scenario": ">=1.2.0",
+    "angular": ">=1.2.0"
+  }
+}

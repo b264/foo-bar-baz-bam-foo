@@ -1,0 +1,34 @@
+{
+  "generator-angular-package": {
+    "props": {
+      "moduleName": "fooBarBazBamFoo",
+      "description": "This Angular components does ...",
+      "gitUrl": "https://github.com/darul75/ng-audio.git",
+      "keywords": "[\"angular\",\"ng\"]",
+      "license": "UNLICENSED",
+      "author": {
+        "name": "full_name",
+        "email": "public88878878887@hotmail.com"
+      },
+      "yourModule": {
+        "original": "fooBarBazBamFoo",
+        "camelized": "fooBarBazBamFoo",
+        "dasherized": "foo-bar-baz-bam-foo",
+        "slugified": "foobarbazbamfoo",
+        "parts": [
+          "foobarbazbamfoo"
+        ]
+      },
+      "includeModuleDirectives": true,
+      "includeModuleFilters": false,
+      "includeModuleServices": true,
+      "includeModuleControllers": true,
+      "includeAngularModuleResource": false,
+      "includeAngularModuleCookies": false,
+      "includeAngularModuleSanitize": false,
+      "moduleDirectory": "modules/foobarbazbamfoo",
+      "moduleUnitTestDirectory": "test/unit/foobarbazbamfoo",
+      "moduleUnitE2eDirectory": "test/e2e/foobarbazbamfoo"
+    }
+  }
+}
