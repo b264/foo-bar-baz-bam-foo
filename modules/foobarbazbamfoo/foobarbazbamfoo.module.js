@@ -5,28 +5,28 @@
   // before all nested files are concatenated by Gulp
 
   // Config
-  angular.module('foobarbazbamfoo.config', [])
-      .value('foobarbazbamfoo.config', {
+  angular.module('fooBarBazBamFoo.config', [])
+      .value('fooBarBazBamFoo.config', {
           debug: true
       });
 
   // Modules
-  
-  angular.module('foobarbazbamfoo.directives', []);
-  
-  
-  
-  angular.module('foobarbazbamfoo.services', []);
-  
-  
-    angular.module('foobarbazbamfoo.controllers', []);
-  
-  angular.module('foobarbazbamfoo',
+
+  angular.module('fooBarBazBamFoo.directives', []);
+
+
+
+  angular.module('fooBarBazBamFoo.services', []);
+
+
+    angular.module('fooBarBazBamFoo.controllers', []);
+
+  angular.module('fooBarBazBamFoo',
       [
-        'foobarbazbamfoo.config',
-        'foobarbazbamfoo.directives',
-        'foobarbazbamfoo.services',
-        'foobarbazbamfoo.controllers'
+        'fooBarBazBamFoo.config',
+        'fooBarBazBamFoo.directives',
+        'fooBarBazBamFoo.services',
+        'fooBarBazBamFoo.controllers'
       ]);
 
 })(angular);
