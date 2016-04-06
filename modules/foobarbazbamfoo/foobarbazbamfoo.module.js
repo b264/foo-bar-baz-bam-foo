@@ -22,11 +22,12 @@
         'fooBarBazBamFoo.services',
         'fooBarBazBamFoo.controllers'
       ]);
-})(angular);
 
-fooBarBazBamFoo.factory("ngFooBar", function(){
-  console.log("ngFooBar loaded");
-  return {
-    foo: 'bar'
-  };
-});
+  angular.fooBarBazBamFoo.factory('ngFooBar', function($rootScope){
+    console.log('ngFooBar loaded');
+    return {
+      foo: 'bar'
+    };
+  });
+
+})(angular);
