@@ -50,17 +50,17 @@ function getTemplateCache() {
   return gulp.src(templates)
     .pipe(plumber())
     .pipe(templateCache({
-      module: 'foobarbazbamfoo.directives'
+      module: 'fooBarBazBamFoo.directives'
     }));
 }
 
 gulp.task('build', function() {
   return eventStream.merge(gulp.src(sourceFiles), getTemplateCache())
     .pipe(plumber())
-    .pipe(concat('foobarbazbamfoo.js'))
+    .pipe(concat('fooBarBazBamFoo.js'))
     .pipe(gulp.dest('./dist/'))
     .pipe(uglify())
-    .pipe(rename('foobarbazbamfoo.min.js'))
+    .pipe(rename('fooBarBazBamFoo.min.js'))
     .pipe(gulp.dest('./dist'));
 });
 
@@ -69,7 +69,7 @@ gulp.task('build-stylesheets', function() {
     .pipe(plumber())
     // .pipe(scss({ bundleExec: true }))
     .pipe(scss())
-    .pipe(concatCss('foobarbazbamfoo.css'))
+    .pipe(concatCss('fooBarBazBamFoo.css'))
     .pipe(gulp.dest('./dist'));
 });
 

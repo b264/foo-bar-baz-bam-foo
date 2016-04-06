@@ -15,7 +15,7 @@
   angular.module('fooBarBazBamFoo.directives', []);
   angular.module('fooBarBazBamFoo.services', []);
   angular.module('fooBarBazBamFoo.controllers', []);
-  angular.module('fooBarBazBamFoo',
+  var fooBarBazBamFoo= angular.module('fooBarBazBamFoo',
       [
         'fooBarBazBamFoo.config',
         'fooBarBazBamFoo.directives',
@@ -23,7 +23,7 @@
         'fooBarBazBamFoo.controllers'
       ]);
 
-  angular.fooBarBazBamFoo.factory('ngFooBar', function($rootScope){
+  fooBarBazBamFoo.factory('ngFooBar', function($rootScope){
     console.log('ngFooBar loaded');
     return {
       foo: 'bar'

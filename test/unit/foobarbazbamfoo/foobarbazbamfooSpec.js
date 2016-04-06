@@ -13,32 +13,32 @@ describe('', function() {
   beforeEach(function() {
 
   // Get module
-  module = angular.module('foobarbazbamfoo');
+  module = angular.module('fooBarBazBamFoo');
   dependencies = module.requires;
   });
 
   it('should load config module', function() {
-    expect(hasModule('foobarbazbamfoo.config')).to.be.ok;
+    expect(hasModule('fooBarBazBamFoo.config')).to.be.ok;
   });
 
-  
 
-  
+
+
   it('should load directives module', function() {
-    expect(hasModule('foobarbazbamfoo.directives')).to.be.ok;
+    expect(hasModule('fooBarBazBamFoo.directives')).to.be.ok;
   });
-  
 
-  
+
+
   it('should load services module', function() {
-    expect(hasModule('foobarbazbamfoo.services')).to.be.ok;
+    expect(hasModule('fooBarBazBamFoo.services')).to.be.ok;
   });
-  
 
-  
+
+
     it('should load controllers module', function() {
-      expect(hasModule('foobarbazbamfoo.controllers')).to.be.ok;
+      expect(hasModule('fooBarBazBamFoo.controllers')).to.be.ok;
     });
-  
+
 
 });
